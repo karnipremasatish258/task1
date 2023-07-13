@@ -1,0 +1,411 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+.main {
+  margin: 1rem;
+}
+.header-up {
+  display: flex;
+  justify-content: space-between;
+}
+svg {
+  margin: 0.1rem;
+  height: 12px; 
+  width: 12px"
+}
+.enquiry-inner {
+      color: rgb(88, 88, 88);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.header-p {
+  font-size: 10px;
+}
+input{
+      background-color: rgb(236, 236, 236);
+      border: 0;
+      height: 20px;
+      padding: 12px;
+      font-size: 11px;
+}
+svg:hover{
+      cursor: pointer;
+}
+.enquiry-details{
+      display: flex;
+}
+
+.a{
+      color:black;
+}
+a:hover{
+      cursor: pointer;
+}
+.main-image{
+      background-image: url("https://i.ibb.co/7pkGyCx/taskimage1.jpg");
+      background-size: cover;
+      width: 100%;
+      height: 70vh;
+      background-position: center;
+}
+.pasta-images{
+      display: flex;
+}
+.bambino-pasta{
+      background-image: url("https://i.ibb.co/sJ6MwhB/taskimage2.jpg");
+      height: 70vh;
+      background-size: cover;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-right: 1rem;
+      width: 60%;
+      background-position: center;
+padding: 1rem;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+}
+.bambino{
+      background-image: url("https://i.ibb.co/hVhMYrp/taskimage13.jpg");
+      height: 70  vh;
+      background-size: cover;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      width: 40%;
+padding: 1rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+}
+
+.bambino-details-1{
+      width: 45%;
+}
+.bambino-details-2{
+      width: 60%;
+}
+.pasta-3-images{
+      display: flex;
+      color: black;
+}
+
+.pasta-image-1{
+      background-image: url("https://i.ibb.co/gJK4rZr/taskimage4.jpg");
+      background-size: cover;
+      width: 30%;
+      height: 40vh;
+      margin-right: 1rem;
+      padding: 1rem;
+      text-align: right;
+}
+.pasta-image-2{
+      background-image: url("https://i.ibb.co/kQWhX9M/taskimage5.jpg");
+      background-size: cover;
+      width: 30%;
+      height: 40vh;
+      margin-right: 1rem;
+      padding: 1rem;
+}
+.pasta-image-3{
+      background-image: url("https://i.ibb.co/QnfDf88/taskimage6.jpg");
+      background-size: cover;
+      width: 40%;
+      height: 40vh;
+      margin-right: 1rem;
+      padding: 1rem;
+}
+
+.our-products{
+      display: flex;
+      justify-content: space-around;
+}
+.products{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      border: 1px ;
+      width: 400px;
+}
+.products-image{
+      width: 300px;
+      height: 230px;
+      box-shadow: 0rem 0rem 1rem 1px black;
+}
+.products-image-tag{
+      width: 250px;
+      height: 210px;
+}
+.product-heading{
+      margin: 1rem;
+      font-size: 30px;
+      font-weight: bold;
+}
+.product-para{
+      font-size: small;
+      color: rgb(104, 104, 104)
+}
+.pasta-story-images{
+      display: flex;
+      justify-content: center;
+}
+.stories{
+      margin-top: 2rem;
+}
+.pasta-story-image1{
+      background-size: cover;
+      background-position: center;
+}.pasta-story-image2{
+      position: relative;
+      background-size: cover;
+      background-position: center;
+}
+.story-button{
+      position: absolute;
+}
+.pasta-video-images{
+      display: inline-flex;   
+      justify-content: center;
+      align-items: center;
+}
+.videos{
+      height: 100%;
+      width: 100%;
+}
+.story-button{
+            position: absolute;
+            top: 88%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            width: 175px;
+            border-radius: 5px;
+}
+.subscribe{
+      margin-top: 4rem;
+      background-color: rgb(201, 201, 201);
+      height: 50px;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.subscribe h1{
+      font-size: 14px;
+}
+.subscribe input{
+margin-left: 1rem;
+border-radius:5px;
+padding: 1rem;
+}
+.subscribe button{
+      height: 33px;
+      font-size: 12px;
+}
+.policies{
+      margin-top: 3rem;
+}
+.policy-nav{
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+}
+.policy-nav a{
+      color: black;
+      text-decoration: none;
+}
+.follow{
+      display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.line{
+      border: 1px solid black;
+}
+.copyright{
+      display: flex;
+      gap: 1rem;
+      color: black;
+}
+
+@media (max-width: 600px) {
+      .main {
+            margin: 1rem;
+          }
+          .header-up {
+            display: flex;
+            justify-content: space-between;
+          }
+          svg {
+            margin: 2px;
+            height: 8px; 
+            width: 8px"
+          }
+          .enquiry-inner {
+            color: rgb(88, 88, 88);
+            display: flex;
+          }
+          .header-p {
+            font-size: 8px;
+          }
+          input{
+                height: 10px;
+                font-size: 8px;
+          }
+          .home-page a{
+            font-size: 8px;
+          }
+          .main-image{
+                height: 20vh;
+          }
+          .pasta-images{
+                display: flex;
+          }
+          .pasta-images h1{
+            font-size: 16px;
+          }
+          .pasta-images p{
+            font-size: 8px;
+          }
+          .button{
+            height: 20px;
+            width: 50px;
+            padding: 1px;
+            font-size: 7px;
+
+          }
+          .bambino-pasta{
+                height: 20vh;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                margin-right: 0.5rem;
+                  padding: 0.5rem;
+          }
+          .bambino{
+                background-image: url("https://i.ibb.co/hVhMYrp/taskimage13.jpg");
+                height: 20vh;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                  padding: 0.5rem;
+          }
+      .pasta-3-images h1{
+            font-size: 10px;
+            font-weight: bold;
+      }
+      .our-products h1{
+            font-size: 10px;
+            font-weight: bold;
+      }
+      .our-products p{
+            font-size: 8px;
+      }
+          .pasta-image-1{
+                height: 10vh;
+                margin-right: 0.5rem;
+                padding: 0.5rem;
+                text-align: right;
+          }
+          .pasta-image-2{
+                height: 10vh;
+                margin-right: 0.5rem;
+                padding: 0.5rem;
+          }
+          .pasta-image-3{
+                height: 10vh;
+                margin-right: 0.5rem;
+                padding: 0.5rem;
+          }
+          
+          .our-products{
+                display: flex;
+                justify-content: space-around;
+          }
+          .products{
+                width: 120px;
+                height: fit-content;
+          }
+          .products-image{
+                width: 100px;
+                height: 100px;
+                box-shadow: 0rem 0rem 1rem 1px black;
+          }
+          .products-image-tag{
+                width: 90px;
+                height: 85px;
+          }
+          .pasta-story-images img{
+            width: 250px;
+            height: 300px;
+          }
+          .pasta-story-images button{
+            height: 20px;
+            width: 60px;
+            font-size: 6px;
+            padding: 1px;
+          }
+          .pasta-video-images .img{
+            object-fit: cover;
+            height: 150px;
+            width: 180px;
+          }
+          .subscribe{
+                margin-top: 1rem;
+                background-color: rgb(201, 201, 201);
+                height: 50px;
+                padding: 0.7rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+          }
+          .subscribe h1{
+                font-size: 8px;
+                padding: 0.7rem
+          }
+          .subscribe input{
+          margin-left: 1rem;
+          border-radius:5px;
+          padding: 0.7rem;
+          }
+          .subscribe button{
+                height: 25px;
+                font-size: 8px;
+          }
+          .policies{
+                margin-top: 3rem;
+          }
+          .policy-nav{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 0.5rem;
+          }
+          .policy-nav a{
+            font-size: 10px;
+                color: black;
+                text-decoration: none;
+          }
+          .follow{
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+          }
+          .line{
+                border: 1px solid black;
+          }
+          .copyright{
+                display: flex;
+                gap: 1rem;
+                color: black;
+          }
+    }
