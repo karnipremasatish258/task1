@@ -1,9 +1,11 @@
 
-
 * {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+}
+.pasta-images-mobile-view{
+      display: none;
 }
 .main {
   margin: 1rem;
@@ -47,13 +49,20 @@ a:hover{
       cursor: pointer;
 }
 .main-image{
-      background-image: url("https://i.ibb.co/7pkGyCx/taskimage1.jpg");
       background-size: cover;
       width: 100%;
       height: 70vh;
       background-position: center;
 }
-.pasta-images{
+.nav-custom{
+      display: flex;
+      justify-content: center;
+      scroll-behavior: smooth;
+}
+.nav-logo{
+      display: none;
+}
+.pasta-images-2{
       display: flex;
 }
 .bambino-pasta{
@@ -79,12 +88,12 @@ padding: 1rem;
       width: 40%;
 padding: 1rem;
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
 }
 
 .bambino-details-1{
-      width: 45%;
+      width: 60%;
 }
 .bambino-details-2{
       width: 60%;
@@ -154,10 +163,10 @@ padding: 1rem;
 }
 .pasta-story-images{
       display: flex;
-      justify-content: center;
 }
 .stories{
       margin-top: 2rem;
+      width: 100%;
 }
 .pasta-story-image1{
       background-size: cover;
@@ -238,6 +247,9 @@ padding: 1rem;
       gap: 1rem;
       color: black;
 }
+.carousel{
+      display: none;
+    }
 
 @media (max-width: 600px) {
       .main {
@@ -252,6 +264,9 @@ padding: 1rem;
             height: 8px; 
             width: 8px"
           }
+          .logo{
+            display: none;
+          }
           .enquiry-inner {
             color: rgb(88, 88, 88);
             display: flex;
@@ -260,17 +275,27 @@ padding: 1rem;
             font-size: 8px;
           }
           input{
-                height: 10px;
-                font-size: 8px;
+                display: none;
           }
           .home-page a{
             font-size: 8px;
           }
-          .main-image{
-                height: 20vh;
+
+          .main-image-full{
+            background-size: cover;
+            object-fit: cover;
+            width: 100%;
+            height: 40vh;
+            background-position: center;;
+          }
+          .nav-logo{
+            display: block;
+          }
+          .pasta-images-mobile-view{
+            display: block;
           }
           .pasta-images{
-                display: flex;
+                display: none;
           }
           .pasta-images h1{
             font-size: 16px;
@@ -286,7 +311,8 @@ padding: 1rem;
 
           }
           .bambino-pasta{
-                height: 20vh;
+                height: 40vh;
+                width: 100%;
                 margin-top: 0.5rem;
                 margin-bottom: 0.5rem;
                 margin-right: 0.5rem;
@@ -294,13 +320,41 @@ padding: 1rem;
           }
           .bambino{
                 background-image: url("https://i.ibb.co/hVhMYrp/taskimage13.jpg");
-                height: 20vh;
+                height: 40vh;
+                width: 100%;
                 margin-top: 0.5rem;
                 margin-bottom: 0.5rem;
                   padding: 0.5rem;
           }
+          .pasta-3-images{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          .pasta-image-1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+          }
+          .pasta-image-2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+          }
+          .pasta-image-3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+          }
       .pasta-3-images h1{
-            font-size: 10px;
+            font-size: 16px;
             font-weight: bold;
       }
       .our-products h1{
@@ -311,42 +365,59 @@ padding: 1rem;
             font-size: 8px;
       }
           .pasta-image-1{
-                height: 10vh;
-                margin-right: 0.5rem;
+            width: 200px;
+                height: 30vh;
+                width: 300px;
+                margin: 0.5rem;
                 padding: 0.5rem;
                 text-align: right;
           }
           .pasta-image-2{
-                height: 10vh;
-                margin-right: 0.5rem;
+            height: 30vh;
+            width: 300px;
+                margin: 0.5rem;
                 padding: 0.5rem;
           }
           .pasta-image-3{
-                height: 10vh;
-                margin-right: 0.5rem;
+            height: 30vh;
+            width: 300px;
+                margin: 0.5rem;
                 padding: 0.5rem;
           }
-          
+
           .our-products{
                 display: flex;
                 justify-content: space-around;
+                border: 1px solid rgb(151, 151, 151);
+          }
+          .our-products h1{
+            font-size: 18px;
+          }
+          .our-products p{
+            font-size: 16px;
           }
           .products{
-                width: 120px;
+                width: 100%;
                 height: fit-content;
           }
           .products-image{
-                width: 100px;
-                height: 100px;
+                width: 200px;
+                height: 200px;
                 box-shadow: 0rem 0rem 1rem 1px black;
           }
           .products-image-tag{
-                width: 90px;
-                height: 85px;
+                width: 200px;
+                height: 180px;
+                object-fit: cover;
+          }
+          .pasta-story-images{
+            display: flex;
+            flex-direction: column;
           }
           .pasta-story-images img{
-            width: 250px;
-            height: 300px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
           }
           .pasta-story-images button{
             height: 20px;
@@ -354,10 +425,15 @@ padding: 1rem;
             font-size: 6px;
             padding: 1px;
           }
+          .pasta-video-images{
+            display: flex;
+            flex-direction: column;
+          }
           .pasta-video-images .img{
             object-fit: cover;
-            height: 150px;
-            width: 180px;
+            height: 180px;
+            width: 300px;
+            margin: 0.5rem;
           }
           .subscribe{
                 margin-top: 1rem;
@@ -408,4 +484,10 @@ padding: 1rem;
                 gap: 1rem;
                 color: black;
           }
+          .our-products{
+            display: none;
+      }
+      .carousel{
+            display: block;
+      }
     }

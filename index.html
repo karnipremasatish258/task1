@@ -88,10 +88,12 @@
             />
           </svg>
         </div>
-        <img
-          style="height: 60px; width: 60px"
-          src="https://i.ibb.co/LkGRMFG/taskimage14.jpg"
-        />
+        <div class="logo">
+          <img
+            style="height: 60px; width: 60px"
+            src="https://i.ibb.co/LkGRMFG/taskimage14.jpg"
+          />
+        </div>
         <div>
           <div class="enquiry-inner">
             <div class="enquiry-details">
@@ -131,32 +133,135 @@
         </div>
       </div>
       <div class="home-page">
-        <ul class="nav flex justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link active a" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link a" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link a" href="#">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link a">Recipes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link a">Career</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link a">Media</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link a">Contact</a>
-          </li>
-        </ul>
-        <div>
-          <div class="main-image"></div>
-          <div class="pasta-images">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <div class="nav-logo">
+                <img
+                  style="height: 30px; width: 30px"
+                  src="https://i.ibb.co/LkGRMFG/taskimage14.jpg"
+                />
+              </div>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse nav-custom"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Products</a>
+                <a class="nav-link" href="#">Recipes</a>
+                <a class="nav-link" href="#">Career</a>
+                <a class="nav-link" href="#">Media</a>
+                <a class="nav-link" href="#">Contact</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide pasta-images-mobile-view"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <div>
+                <img
+                  class="main-image-full"
+                  src="https://i.ibb.co/7pkGyCx/taskimage1.jpg"
+                />
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <div class="bambino">
+                <div class="bambino-details-2">
+                  <h1>Want Something real?</h1>
+                  <button
+                    id="bambino-pasta-knowmore"
+                    type="button"
+                    class="btn btn-danger button"
+                  >
+                    Know More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="bambino-pasta">
+                <div class="bambino-details-1">
+                  <h1>Want Something real?</h1>
+                  <p>Banbino Instant Nutritious passta with tasty masala</p>
+                  <button
+                    id="bambino-pasta-readmore"
+                    type="button"
+                    class="btn btn-danger button"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="pasta-images">
+          <div>
+            <img
+              class="main-image-full"
+              src="https://i.ibb.co/7pkGyCx/taskimage1.jpg"
+            />
+          </div>
+          <div class="pasta-images-2">
             <div class="bambino-pasta">
               <div class="bambino-details-1">
                 <h1>Want Something real?</h1>
@@ -184,6 +289,7 @@
             </div>
           </div>
         </div>
+
         <div class="pasta-3-images">
           <div class="pasta-image-1">
             <h1>Healthy Pasta !!!</h1>
@@ -209,8 +315,94 @@
             </button>
           </div>
         </div>
+
         <div>
           <h1 style="text-align: center; margin-top: 3rem">Our Products</h1>
+          <div
+            id="carouselExample"
+            class="carousel slide carousel our-products"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="products">
+                  <div class="products-image">
+                    <img
+                      class="products-image-tag"
+                      src="https://i.ibb.co/CWdv7mg/taskimage7.jpg"
+                    />
+                  </div>
+                  <h1 class="product-heading">ONLY VEGETARIAN</h1>
+                  <p class="product-para">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Exercitationem vero eaque illum repellat iusto nulla iste
+                    expedita velit, amet neque at molestias. Placeat error, quae
+                    velit hic harum iure excepturi!
+                  </p>
+                  <a style="color: rgb(104, 104, 104)" href="">READ MORE</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="products">
+                  <div class="products-image">
+                    <img
+                      class="products-image-tag"
+                      src="https://i.ibb.co/Nt7hqf2/taskimage8.jpg"
+                    />
+                  </div>
+                  <h1 class="product-heading">GRAB & GO</h1>
+                  <p class="product-para">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Exercitationem vero eaque illum repellat iusto nulla iste
+                    expedita velit, amet neque at molestias. Placeat error, quae
+                    velit hic harum iure excepturi!
+                  </p>
+                  <a style="color: rgb(104, 104, 104)" href="">READ MORE</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="products">
+                  <div class="products-image">
+                    <img
+                      class="products-image-tag"
+                      src="https://i.ibb.co/RzbkhSm/taskimage9.jpg"
+                    />
+                  </div>
+                  <h1 class="product-heading">FRESH SCHOOL TACOS</h1>
+                  <p class="product-para">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Exercitationem vero eaque illum repellat iusto nulla iste
+                    expedita velit, amet neque at molestias. Placeat error, quae
+                    velit hic harum iure excepturi!
+                  </p>
+                  <a style="color: rgb(104, 104, 104)" href="">READ MORE</a>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
           <div class="our-products">
             <div class="products">
               <div class="products-image">

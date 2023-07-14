@@ -33,3 +33,6 @@ buttons5.addEventListener("click", () => {
 buttons6.addEventListener("click", () => {
   alert("Subscribed");
 });
+
+const change = document.querySelector(".stories");
+console.log(change);
